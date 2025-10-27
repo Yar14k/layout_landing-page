@@ -1,0 +1,14 @@
+.main {
+  display: grid;
+  row-gap: 96px;
+  padding-block: 96px;
+  background-color: #1D1D1D;
+
+
+  @include contentPaddingInline;
+
+  @include onTablet {
+    padding-left: 120px;
+    row-gap: 120px;
+  }
+}
