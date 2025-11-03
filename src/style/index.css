@@ -487,7 +487,7 @@ p {
   font-weight: 700;
   font-size: 24px;
   line-height: 140%;
-  grid-column: -1;
+  grid-column: 1/-1;
 }
 @media (min-width: 576px) {
   .the-detail__title {
@@ -513,18 +513,18 @@ p {
   align-items: center;
   border-radius: 40px;
   margin-top: 40px;
+  grid-column: 1/-1;
 }
 @media (min-width: 576px) {
   .the-detail__button {
     width: 392px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-column: 2/6;
   }
 }
 @media (min-width: 1024px) {
   .the-detail__button {
     width: 324px;
+    grid-column: 5/9;
   }
 }
 .the-detail__description {
