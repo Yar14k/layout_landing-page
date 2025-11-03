@@ -1,0 +1,57 @@
+.contacts {
+  &__title {
+  margin: 0;
+  margin-bottom: 48px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -1.5px;
+  }
+
+  &__text {
+
+  }
+
+  &__input {
+  border-radius: 40px;
+  width: 100%;
+   max-width: 277px;
+   height: 48px;
+   background: #f8f8fa;
+   box-sizing: border-box;
+  }
+
+  &__input--message {
+    border-radius: 16px;
+   padding: 14px 16px;
+   width: 100%;
+   max-width: 277px;
+   height: 148px;
+   background: #f8f8fa;
+
+
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 143%;
+   color: #7e7e83;
+
+  }
+
+  &__button {
+   font-weight: 700;
+  font-size: 16px;
+  line-height: 169%;
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  width: 100%;
+  max-width: 320px;
+  height: 56px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  }
+}
