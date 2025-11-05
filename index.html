@@ -149,7 +149,7 @@
 
     <main class="main">
       <section class="move-free">
-        <h2 class="section-title">Move Free</h2>
+        <h2 class="section-title section-title__move-free">Move Free</h2>
         <p class="move-free__text">Shift your ride, not gears. Find the fastest way to move in the city as the bike adapts intuitively to power the speed you need.</p>
       </section>
 
@@ -197,11 +197,11 @@
             <a href="" class="the-detail_link the-detail__link--wide">
         <picture>
    <source
-   media="(min-width: 800px;)"
+   media="(min-width: 800px)"
    srcset="/src/styles/images/auto-unclock--wide--big.png"
    >
   <source
-    media="(min-width: 600px;)"
+    media="(min-width: 600px)"
     srcset="/src/styles/images/auto-unclock--wide--middle.png"
   >
  <img
@@ -214,11 +214,11 @@
         <a href="" class="the-detail__link the-detail__link--square">
         <picture>
    <source
-   media="(min-width: 800px;)"
+   media="(min-width: 800px)"
   srcset="/src/styles/images/auto-unclock--square--big.png"
   >
   <source
-    media="(min-width: 600px;)"
+    media="(min-width: 600px)"
     srcset="/src/styles/images/auto-unclock--square--middle.png"
   >
 
@@ -237,11 +237,11 @@
             <a href="" class="the-detail__link the-detail__link--wide">
          <picture>
    <source
-   media="(min-width: 800px;)"
+   media="(min-width: 800px)"
    srcset="/src/styles/images/range--big.png"
    >
   <source
-    media="(min-width: 600px;)"
+    media="(min-width: 600px)"
     srcset="/src/styles/images/range--middle.png"
   >
  <img
@@ -254,11 +254,11 @@
          <a href="" class="the-detail__link the-detail__link--square">
          <picture>
    <source
-   media="(min-width: 800px;)"
+   media="(min-width: 800px)"
    srcset="/src/styles/images/integrated-lights--big.png"
    >
   <source
-    media="(min-width: 600px;)"
+    media="(min-width: 600px)"
     srcset="/src/styles/images/integrated-lights--middle.png"
   >
  <img
@@ -276,11 +276,11 @@
             <a href="" class="the-detail__link the-detail__link--square">
          <picture>
    <source
-    media="(min-width: 800px;)"
+    media="(min-width: 800px)"
    srcset="/src/styles/images/hydraulic-disc-brakes--big.png"
    >
   <source
-    media="(min-width: 600px;)"
+    media="(min-width: 600px)"
     srcset="/src/styles/images/hydraulic-disc-brakes--middle.png"
   >
  <img
@@ -293,11 +293,11 @@
          <a href="" class="the-detail__link the-detail__link--wide">
         <picture>
     <source
-    media="(min-width: 800px;)"
+    media="(min-width: 800px)"
     srcset="/src/styles/images/lightweight--big.png"
     >
   <source
-    media="(min-width: 600px;)"
+    media="(min-width: 600px)"
     srcset="/src/styles/images/lightweight--middle.png"
   >
  <img
@@ -323,28 +323,36 @@
         type="text"
         placeholder="Name"
         class="contacts__input">
-        <p class="contacts__text">
-          Phone
-        </p>
-        <p class="contacts__text">
-          +1 234 5555-55-55
-        </p>
 
         <input
         type="text"
         placeholder="Email"
         class="contacts__input">
-        <p class="contacts__text">
-          Email
-        </p>
-        <p class="contacts__text">
-          hello@miami.com
-        </p>
 
         <input
         type="text"
         placeholder="Message"
         class="contacts__input--message">
+
+         <a
+        href="#"
+        class="contacts__button"
+      >
+        Send
+      </a>
+
+        <p class="contacts__text">
+          Phone
+        </p>
+        <p class="contacts__text--last">
+          +1 234 5555-55-55
+        </p>
+        <p class="contacts__text">
+          Email
+        </p>
+        <p class="contacts__text--last">
+          hello@miami.com
+        </p>
         <p class="contacts__text">
           Address
         </p>
@@ -354,12 +362,7 @@
           Minneapolis, MN 55401
         </p>
 
-        <a
-        href="#"
-        class="contacts__button"
-      >
-        Send
-      </a>
+
 
       </section>
     </main>

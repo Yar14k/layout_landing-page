@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 24px;
+  @include pageGrid;
   &__photos {
    @include pageGrid;
    margin-bottom: 16px;
@@ -13,19 +14,21 @@
   &__link {
 
     &--wide {
-      grid-column: span 6;
+      grid-column: span 1;
+
+
       @include onTablet {
-        grid-column: span 6;
+        grid-column: span 4;
       }
       @include onDesktop {
        grid-column: span 8;
       }
     }
     &--square {
-      grid-column: span 6;
+      grid-column: span 1;
 
       @include onTablet {
-       grid-column: span 6;
+       grid-column: span 2;
       }
       @include onDesktop {
        grid-column: span 4;
@@ -66,17 +69,15 @@
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  margin-top: 40px;
+  margin: 40px auto 0 ;
   grid-column: 1 / -1;
 
     @include onTablet {
       width: 392px;
-       grid-column: 2 / 6;
     }
 
     @include onDesktop {
       width: 324px;
-      grid-column: 5 / 9;
     }
   }
 
