@@ -10,10 +10,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>MyBike</title>
     <link
       rel="stylesheet"
-      href="src/styles/index.scss"
+      href="/src/styles/index.scss"
     />
 
     <link
@@ -319,50 +319,61 @@
 
       <section class="contacts">
         <h2 class="contacts__title">Contact us</h2>
+        <div class="contacts__fields">
         <input
         type="text"
         placeholder="Name"
-        class="contacts__input">
+        class="contacts__fields__input">
 
         <input
         type="text"
         placeholder="Email"
-        class="contacts__input">
+        class="contacts__fields__input">
 
         <input
         type="text"
         placeholder="Message"
-        class="contacts__input--message">
+        class="contacts__fields__input--message">
 
          <a
         href="#"
-        class="contacts__button"
+        class="contacts__fields__button"
       >
         Send
       </a>
-
-        <p class="contacts__text">
-          Phone
-        </p>
-        <p class="contacts__text--last">
+    </div>
+         <div class="contacts-block">
+          <address class="contacts-info">
+          <div class="contacts-info__item">
+          <p class="contacts-info__item__text">Phone</p>
+          <a href="tel+123455555555" class="contacts-info__item__value--phone">
           +1 234 5555-55-55
-        </p>
-        <p class="contacts__text">
+          </a>
+        </div>
+
+        <div class="contacts-info__item">
+          <p class="contacts-info__item__text">
           Email
-        </p>
-        <p class="contacts__text--last">
+          </p>
+        <a href="mailto:hello@miami.com" class="contacts-info__text--email">
           hello@miami.com
-        </p>
-        <p class="contacts__text">
+        </a>
+      </div>
+
+        <div class="contacts-info__item">
+          <p class="contacts-info__item__text">
           Address
-        </p>
-        <p class="contacts__text">
+          </p>
+        <a class="contacts-info__item__value--text" target="_blank">
+
           400 first ave.
+          <br>
           suite 700
+          <br>
           Minneapolis, MN 55401
-        </p>
-
-
+        </a></p></div>
+</address>
+         </div>
 
       </section>
     </main>

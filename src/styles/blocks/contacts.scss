@@ -1,113 +1,190 @@
 .contacts {
-   @include pageGrid;
+  grid-row-start: 0;
+
+  @include pageGrid;
   &__title {
-  margin: 0;
-  margin-bottom: 48px;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 100%;
-  text-align: center;
-  letter-spacing: -1.5px;
+    width: 100%;
+    margin: 0 0 32px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -1.5px;
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      font-size: 48px;
+      margin-bottom: 48px;
+    }
+
+    @include onDesktop {
+      font-size: 64px;
+    }
+  }
+  &__fields {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 1 / 3;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 6;
+    }
+    &__input {
+      border-radius: 40px;
+      width: 100%;
+      height: 48px;
+      background: #f8f8fa;
+      box-sizing: border-box;
+      padding-left: 16px;
+      margin: 16px 0 0;
+      grid-column: 1 / -1;
+
+      @include onTablet {
+        width: 288px;
+        grid-column: 1 / 4;
+      }
+
+      @include onDesktop {
+        width: 411px;
+        grid-column: 1 / 6;
+      }
+    }
+
+    &__input--message {
+      border-radius: 16px;
+      width: 100%;
+      height: 148px;
+      background: #f8f8fa;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding-left: 16px;
+      padding-bottom: 95px;
+      box-sizing: border-box;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 143%;
+      color: #7e7e83;
+
+      margin: 16px 0;
+      grid-column: 1 / -1;
+
+      @include onTablet {
+        width: 288px;
+        grid-column: 1 / 4;
+      }
+
+      @include onDesktop {
+        width: 411px;
+        grid-column: 1 / 6;
+      }
+    }
+
+    &__button {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 169%;
+      text-decoration: none;
+      color: black;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      height: 56px;
+      background-color: #fff;
+      border-radius: 40px;
+      margin: 32px 0 0;
+      &:hover {
+        box-shadow: 0 4px 16px 0 rgba(232, 232, 240, 0.4);
+      }
+
+      grid-column: 1 / -1;
+
+      @include onTablet {
+        width: 288px;
+        grid-column: 1 / 4;
+      }
+
+      @include onDesktop {
+        width: 411px;
+        grid-column: 1 / 6;
+      }
+    }
+  }
+}
+
+.contacts-block {
   grid-column: 1 / -1;
 
-   @include onTablet {
-    width: 288px;
-    grid-column: 2 / 6;
+  @media (min-width: 576px) {
+    .contacts-block {
+      align-self: flex-start;
+    }
   }
-  @include onDesktop {
-    width: 411px;
-    grid-column: 5 / 9;
-  }
-  }
-
-  &__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
-    color: #fff;
-   grid-column: 1 / -1;
 
   @include onTablet {
-    width: 288px;
-    grid-column: 4 / 6;
+    grid-column: 5 / -1;
   }
+
   @include onDesktop {
-    width: 411px;
-    grid-column: 8 / 10;
+    grid-column: 8 / -1;
   }
-  }
+}
 
-  &__input {
-  border-radius: 40px;
-  width: 277px;
-   height: 48px;
-   background: #f8f8fa;
-   box-sizing: border-box;
-    padding-left: 16px;
-     margin: 16px auto 0 ;
-  grid-column: 1 / -1;
-
-  @include onTablet {
-    width: 288px;
-    grid-column: 1 / 4;
-  }
-  @include onDesktop {
-    width: 411px;
-    grid-column: 1 / 6;
-  }
-  }
-
-  &__input--message {
-    border-radius: 16px;
-   width: 277px;
-   height: 148px;
-   background: #f8f8fa;
-   display: flex;
-   flex-direction: column;
-
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 143%;
-   color: #7e7e83;
-
-    margin: 16px auto 0 ;
-  grid-column: 1 / -1;
-
-  @include onTablet {
-    width: 288px;
-    grid-column: 1 / 4;
-  }
-  @include onDesktop {
-    width: 411px;
-    grid-column: 1 / 6;
-  }
-  }
-
-  &__button {
-   font-weight: 700;
-  font-size: 16px;
-  line-height: 169%;
+.contacts-info {
+  row-gap: 8px;
+  color: #fff;
+  font-family: Poppins, sans-serif;
   text-decoration: none;
-  color: black;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &__item {
+    padding-bottom: 24px;
+    &__value--text {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0;
+      font-style: normal;
+      transition: color 0.3s ease;
+      &:hover {
+        color: #ccc;
+      }
+    }
 
-  width: 277px;
-  height: 56px;
-  background-color: #fff;
-  border-radius: 40px;
-  margin: 32px auto 0 ;
-  grid-column: 1 / -1;
+    &__value--phone {
+      text-decoration: none;
+      font-family: Poppins, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      transition: color 0.3s ease;
+      color: #fff;
+      &:hover {
+        color: #ccc;
+      }
+    }
 
-  @include onTablet {
-    width: 288px;
-    grid-column: 1 / 4;
+    &__text {
+      font-size: 14px;
+    }
   }
-  @include onDesktop {
-    width: 411px;
-    grid-column: 1 / 6;
-  }
+  &__text--email {
+    text-decoration: none;
+    color: #fff;
+
+    transition: color 0.3s ease;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0;
+    font-style: normal;
+    &:hover {
+      color: #ccc;
+    }
   }
 }

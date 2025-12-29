@@ -1,6 +1,8 @@
 .top-bar {
   padding-block: 24px;
+
   @include contentPaddingInline;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,6 +27,11 @@
 
     @include onTablet {
       height: 24px;
+    }
+
+    @include onDesktop {
+      width: 187px;
+      height: 56px;
     }
   }
 }
