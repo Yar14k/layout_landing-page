@@ -26,7 +26,7 @@
     justify-content: center;
     align-items: center;
 
-    @include onTablet {
+    @include on-tablet {
       font-size: 64px;
     }
   }
@@ -34,9 +34,9 @@
   &__bottom {
     padding-bottom: 80px;
 
-    @include contentPaddingInline;
+    @include content-padding-inline;
 
-    @include onTablet {
+    @include on-tablet {
       padding-bottom: 130px;
     }
   }

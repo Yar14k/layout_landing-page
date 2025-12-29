@@ -5,14 +5,14 @@
   background-color: #1d1d1d;
   box-sizing: border-box;
 
-  @include contentPaddingInline;
+  @include content-padding-inline;
 
-  @include onDesktop {
+  @include on-desktop {
     max-width: none;
     margin-inline: 0;
   }
 
-  @include onTablet {
+  @include on-tablet {
     padding-block: 120px;
     row-gap: 120px;
   }

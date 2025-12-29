@@ -1,6 +1,6 @@
 /* Error: Undefined mixin.
  *   ,
- * 3 |     @include pageGrid;
+ * 3 |     @include page-grid;
  *   |     ^^^^^^^^^^^^^^^^^
  *   '
  *   src\styles\blocks\recommended.scss 3:5  root stylesheet */
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 3 \2502      @include pageGrid;\a   \2502      ^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\styles\\blocks\\recommended.scss 3:5  root stylesheet";
+  content: "Error: Undefined mixin.\a   \2577 \a 3 \2502      @include page-grid;\a   \2502      ^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\styles\\blocks\\recommended.scss 3:5  root stylesheet";
 }

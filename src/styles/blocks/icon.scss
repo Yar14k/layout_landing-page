@@ -9,7 +9,7 @@
 
   @include hover(transform, scale(1.2));
 
-  @include onTablet {
+  @include on-tablet {
     height: 32px;
     width: 32px;
   }
@@ -20,6 +20,20 @@
 
   &--menu {
     background-image: url('/src/styles/images/icons/icon-burger.svg');
+
+    @include on-tablet {
+      background-image: url('/src/styles/images/icons/icon-burger-menu-hover.svg');
+      &:hover {
+      background-image: url('/src/styles/images/icons/icon-burger.svg');
+    }
+    }
+
+    @include on-desktop {
+      background-image: url('/src/styles/images/icons/icon-burger-menu-hover.svg');
+      &:hover {
+      background-image: url('/src/styles/images/icons/Icon-Burger-menu-hover-white.svg');
+    }
+    }
 
     &:hover {
       background-image: url('/src/styles/images/icons/icon-burger-menu-hover.svg');

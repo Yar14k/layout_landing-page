@@ -4,9 +4,9 @@
   gap: 24px;
   margin-bottom: 40px;
 
-  @include pageGrid;
+  @include page-grid;
   &__photos {
-    @include pageGrid;
+    @include page-grid;
 
     margin-bottom: 16px;
   }
@@ -14,22 +14,22 @@
     &--wide {
       grid-column: span 1;
 
-      @include onTablet {
+      @include on-tablet {
         grid-column: span 4;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         grid-column: span 8;
       }
     }
     &--square {
       grid-column: span 1;
 
-      @include onTablet {
+      @include on-tablet {
         grid-column: span 2;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         grid-column: span 4;
       }
     }
@@ -50,11 +50,11 @@
     line-height: 1.4;
     grid-column: 1 / -1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1 / 6;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 1 / 6;
     }
   }
@@ -80,11 +80,11 @@
       box-shadow: 0 4px 16px 0 rgba(232, 232, 240, 0.4);
     }
 
-    @include onTablet {
+    @include on-tablet {
       width: 392px;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       width: 324px;
     }
   }
@@ -94,7 +94,7 @@
     margin: 0;
     line-height: 40px;
 
-    @include onTablet {
+    @include on-tablet {
       row-gap: 64px;
     }
   }
