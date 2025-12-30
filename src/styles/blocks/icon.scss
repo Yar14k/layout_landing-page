@@ -16,6 +16,28 @@
 
   &--phone {
     background-image: url('/src/styles/images/icons/icon-phone.svg');
+    display: inline-flex;
+    align-items: center;
+    justify-content: end;
+    text-decoration: none;
+    border: 0;
+    box-shadow: none;
+  }
+
+  &--number {
+    white-space: nowrap;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+
+
+    opacity: 0;
+    transition: .3s;
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &--menu {
@@ -24,20 +46,17 @@
     @include on-tablet {
       background-image: url('/src/styles/images/icons/icon-burger-menu-hover.svg');
       &:hover {
-      background-image: url('/src/styles/images/icons/icon-burger.svg');
-    }
+        background-image: url('/src/styles/images/icons/icon-burger.svg');
+      }
     }
 
     @include on-desktop {
       background-image: url('/src/styles/images/icons/icon-burger-menu-hover.svg');
       &:hover {
-      background-image: url('/src/styles/images/icons/Icon-Burger-menu-hover-white.svg');
-    }
+        background-image: url('/src/styles/images/icons/Icon-Burger-menu-hover-white.svg');
+      }
     }
 
-    &:hover {
-      background-image: url('/src/styles/images/icons/icon-burger-menu-hover.svg');
-    }
   }
 
   &--close {
