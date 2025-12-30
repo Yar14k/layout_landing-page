@@ -3,7 +3,7 @@
   width: 24px;
   display: block;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cn;
   background-position: center;
   transition: transform 0.3s;
 
@@ -16,12 +16,10 @@
 
   &--phone {
     background-image: url('/src/styles/images/icons/icon-phone.svg');
-    display: inline-flex;
-    align-items: center;
-    justify-content: end;
     text-decoration: none;
     border: 0;
     box-shadow: none;
+    position: relative;
   }
 
   &--number {
@@ -31,6 +29,11 @@
     font-size: 12px;
     line-height: 16px;
     text-decoration: none;
+    text-transform: uppercase;
+
+    position: absolute;
+    right: 100%;
+
 
 
     opacity: 0;
