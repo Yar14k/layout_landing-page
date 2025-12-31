@@ -23,6 +23,8 @@
   }
 
   &--number {
+    padding-top: 10px;
+    width: 150px;
     white-space: nowrap;
     color: #fff;
     font-weight: 700;
@@ -32,9 +34,7 @@
     text-transform: uppercase;
 
     position: absolute;
-    right: 100%;
-
-
+    right: 10px;
 
     opacity: 0;
     transition: .3s;
