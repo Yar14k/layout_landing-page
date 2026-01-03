@@ -2,12 +2,20 @@
   width: 100%;
   height: 100vh;
   background-image: url('/src/styles/images/header-bg.png');
-  background-position: center;
+  background-position: right -60px center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+
+  @include on-tablet {
+    background-position: center;
+  }
+
+  @include on-desktop {
+    background-position: center;
+  }
 
   &__top {
     display: flex;
