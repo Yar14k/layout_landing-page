@@ -1,7 +1,6 @@
 .the-detail {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 24px;
   margin-bottom: 40px;
 
   @include page-grid;
@@ -11,8 +10,10 @@
     margin-bottom: 16px;
   }
   &__link {
+    margin-bottom: 16px;
     &--wide {
       grid-column: span 1;
+      margin-bottom: 16px;
 
       @include on-tablet {
         grid-column: span 4;
@@ -43,6 +44,7 @@
       transform: scale(1.05);
     }
   }
+
   &__title {
     margin: 0 0 8px;
     font-weight: 700;
@@ -96,6 +98,10 @@
 
     @include on-tablet {
       row-gap: 64px;
+    }
+
+    @include on-desktop {
+      grid-column: 1 / 8;
     }
   }
 }

@@ -6,4 +6,16 @@
       transform: scale(1.05);
     }
   }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+  }
+
+  &__price {
+    font-weight: 700;
+  }
 }
