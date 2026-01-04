@@ -40,6 +40,7 @@
       padding-left: 16px;
       margin: 16px 0 0;
       grid-column: 1 / -1;
+      outline: none;
 
       @include on-tablet {
         width: 288px;
@@ -64,6 +65,7 @@
       padding-left: 16px;
       padding-bottom: 95px;
       box-sizing: border-box;
+      outline: none;
 
       font-weight: 400;
       font-size: 14px;
@@ -90,6 +92,7 @@
       line-height: 169%;
       text-decoration: none;
       color: black;
+      font-family: Poppins, sans-serif;
 
       display: flex;
       justify-content: center;
@@ -146,6 +149,8 @@
 
   &__item {
     padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
     &__value--text {
       text-decoration: none;
       color: #fff;

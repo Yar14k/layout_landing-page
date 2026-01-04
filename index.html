@@ -36,6 +36,7 @@
   </head>
   <!-- #endregion -->
   <body class="page__body">
+    <form onsubmit="this.reset(); return false;"></form>
     <header class="header">
       <div class="top-bar">
         <a
@@ -329,47 +330,46 @@
         <input
         type="text"
         placeholder="Name"
-        class="contacts__fields__input">
+        class="contacts__fields__input" required>
 
         <input
-        type="text"
+        type="email"
         placeholder="Email"
-        class="contacts__fields__input">
+        class="contacts__fields__input" required>
 
         <input
         type="text"
         placeholder="Message"
-        class="contacts__fields__input--message">
+        class="contacts__fields__input--message" required>
 
-         <a
-        href="#"
+         <button        href="#"
         class="contacts__fields__button"
       >
         Send
-      </a>
+         </button>
     </form>
          <div class="contacts-block">
           <address class="contacts-info">
           <div class="contacts-info__item">
-          <p class="contacts-info__item__text">Phone</p>
-          <a href="tel+123455555555" class="contacts-info__item__value--phone">
+          <a class="contacts-info__item__text">Phone</a>
+          <a href="tel:+123455555555" class="contacts-info__item__value--phone">
           +1 234 5555-55-55
           </a>
         </div>
 
         <div class="contacts-info__item">
-          <p class="contacts-info__item__text">
+          <a class="contacts-info__item__text">
           Email
-          </p>
+          </a>
         <a href="mailto:hello@miami.com" class="contacts-info__text--email">
           hello@miami.com
         </a>
       </div>
 
         <div class="contacts-info__item">
-          <p class="contacts-info__item__text">
+          <a class="contacts-info__item__text">
           Address
-          </p>
+          </a>
         <a class="contacts-info__item__value--text" target="_blank">
 
           400 first ave.
@@ -386,5 +386,6 @@
 
     <footer class="footer">
     </footer>
+  </form>
   </body>
 </html>
