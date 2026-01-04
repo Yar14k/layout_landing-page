@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin-bottom: 40px;
+  max-width: 1020px;
 
   @include page-grid;
   &__photos {

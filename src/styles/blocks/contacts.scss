@@ -41,6 +41,11 @@
       margin: 16px 0 0;
       grid-column: 1 / -1;
       outline: none;
+      color: black;
+
+      &::placeholder {
+        color: black;
+      }
 
       @include on-tablet {
         width: 288px;
@@ -70,7 +75,11 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 143%;
-      color: #7e7e83;
+      color: black;
+
+      &::placeholder {
+        color: black;
+      }
 
       margin: 16px 0;
       grid-column: 1 / -1;

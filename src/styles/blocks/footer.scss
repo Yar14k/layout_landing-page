@@ -5,7 +5,7 @@
   background-size: cover;
   position: sticky;
   z-index: -1;
-  top: 0;
+  bottom: 0;
 
   @include on-desktop {
     height: 480px;
