@@ -1,7 +1,8 @@
 .product {
   &__photo {
-    max-width: 100%;
+    max-width: 1020px;
     transition: transform 0.3s;
+    width: 100%;
     &:hover {
       transform: scale(1.05);
     }

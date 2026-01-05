@@ -36,7 +36,6 @@
   </head>
   <!-- #endregion -->
   <body class="page__body">
-    <form onsubmit="this.reset(); return false;"></form>
     <header class="header">
       <div class="top-bar">
         <a
@@ -326,7 +325,7 @@
 
       <section class="contacts">
         <h2 class="contacts__title">Contact us</h2>
-        <form class="contacts__fields">
+        <form onsubmit="this.reset(); return false;" class="contacts__fields">
         <input
         type="text"
         placeholder="Name"
